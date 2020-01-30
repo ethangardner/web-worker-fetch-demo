@@ -12,7 +12,7 @@ const createMarkup = (data) => {
 
 self.addEventListener(
   'message',
-  function (e) {
+  e => {
     switch (e.data.type) {
       case 'getPostsRequest':
         //getPosts().then(json => self.postMessage(json));
